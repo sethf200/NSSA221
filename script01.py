@@ -15,7 +15,7 @@ def test_local_connectivity():
     print("\nTesting local connectivity (pinging default gateway)...")
     gateway_ip = get_default_gateway()
     if gateway_ip:
-        response = os.system("ping -c 4" + gateway_ip)
+        response = os.system("ping -c4" + gateway_ip)
         if response == 0:
             print("Local connectivity to + gateway_ip + successful.")
         else:
